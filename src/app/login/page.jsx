@@ -1,13 +1,25 @@
-import Teste from "@/components/teste";
-
-
-export default function LoginPage(){
-    return(
-        // Neste arquivo será o proprio conteudo da página como sections e a main
-        <main className="flex min-h-screen flex-col items-center p-24">
-            <div className="font-bold text-9xl">Hello World!</div>
-            <div className="font-bold text-6xl">Página de Login</div>
-            <Teste />
-        </main>
-    )
+export default function LoginPage() {
+  
+  return (
+    // Neste arquivo será o proprio conteudo da página como sections e a main
+    <div
+      className={`
+            items-center
+            flex
+            flex-col
+            justify-center
+            h-full 
+            w-full
+        `}
+    >
+      <div
+       className="bg-[#2A933E] w-2/4"
+      >
+        
+      </div>
+      <div className="font-bold">Acessar Painel</div>
+      <div className="italic">Evocando conexão entre as dimensões ambiental, social e de governo</div>
+      {/* <Teste /> */}
+    </div>
+  );
 }
