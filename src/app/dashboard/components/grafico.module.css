@@ -1,0 +1,17 @@
+.container_ranking {
+    position: relative;
+}
+
+.container_titulo {
+    color: #07510A;
+    font-weight: 800;
+    font-size: 3.125rem;
+    text-align: center;
+    margin-top: 10.625rem;
+}
+
+.rankinggrafico::after {
+    content: url(./rankinggrafico.png);
+    width: 800px;
+}
+

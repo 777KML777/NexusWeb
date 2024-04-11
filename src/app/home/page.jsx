@@ -8,6 +8,7 @@ export default function HomePage() {
             <div className="font-bold text-9xl">Hello World!</div>
             <div className="font-bold text-6xl">Página de Home</div>
             <Teste />
+            <div className="w-[72.43px] h-8 rounded border-none bg-[#f6f6] text-[#fff]"></div>
         </main>
   );
 }
