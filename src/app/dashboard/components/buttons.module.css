@@ -19,21 +19,21 @@
 }
 
 .button_beneficio::before {
-    content: url(./box.png);
+    content: url(/images/dashboard/box.png);
     display: block;
 }
 
 .button_editar::before {
-    content: url(./three-people.png);
+    content: url(/images/dashboard/three-people.png);
     display: block;
 }
 
 .button_feedbacks::before {
-    content: url(./chat-box.png);
+    content: url(/images/dashboard/chat-box.png);
     display: block;
 }
 
 .button_pontuação::before {
-    content: url(./trophy.png);
+    content: url(/images/dashboard/trophy.png);
     display: block;
 }

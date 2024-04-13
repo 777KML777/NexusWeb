@@ -20,7 +20,7 @@
 }
 
 .logo_nexus {
-    background-image: url(./logo-nexus.png);
+    background-image: url(/images/logo-nexus.png);
     background-repeat: no-repeat;
     height: 3.75rem;
     width: 11.813rem;
@@ -47,11 +47,11 @@
 }
 
 .button_user::after {
-    content: url(./user.png);
+    content: url(/images/dashboarduser.png);
 }
 
 .button_bell::after {
-    content: url(./bell.png);
+    content: url(/images/dashboardbell.png);
 }
 
 .container_user_icons {
