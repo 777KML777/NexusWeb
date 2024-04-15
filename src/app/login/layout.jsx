@@ -6,7 +6,7 @@ export default function LoginLayout({ children }) {
     <main className="flex flex-row">
       <div
         className={`
-            bg-[#2A933E]
+            bg-[#07510A]
             flex
             flex-col
             justify-between
