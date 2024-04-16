@@ -1,4 +1,4 @@
-import Teste from "@/components/teste";
+import Teste from "../../components/teste";
 
 export default function RegisterPage(){
     return(
