@@ -1,6 +1,5 @@
 import Teste from "../../components/teste";
 
-
 export default function HomePage() {
   return (
     // Neste arquivo será o proprio conteudo da página como sections e a main
