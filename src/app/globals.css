@@ -8,7 +8,15 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+@media (prefers-color-scheme: dark) {
+=======
 @media (prefers-color-scheme: light) {
+>>>>>>> 2ddcac4251312a7691bede29bc00da3072323e4d
+=======
+@media (prefers-color-scheme: light) {
+>>>>>>> 92f9411319951164627ec9565cdcbe2218a5a695
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
