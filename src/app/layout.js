@@ -8,6 +8,7 @@ export const metadata = {
   description: "Gnexus apliactivo",
 };
 
+
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">

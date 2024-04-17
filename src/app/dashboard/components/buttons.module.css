@@ -1,0 +1,39 @@
+.conatainer_buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.8rem;
+    margin-top: 6.938rem;
+}
+
+
+.button_beneficio, .button_editar, .button_feedbacks, .button_pontuação{
+    width: 17.5rem;
+    height: 5rem;
+    border: solid 2px #0D6511;
+    border-radius: 8px;
+    background-color: #fff;
+    
+    color: #000;
+    font-weight: 500;
+    justify-content: center;
+}
+
+.button_beneficio::before {
+    content: url(/images/dashboard/box.png);
+    display: block;
+}
+
+.button_editar::before {
+    content: url(/images/dashboard/three-people.png);
+    display: block;
+}
+
+.button_feedbacks::before {
+    content: url(/images/dashboard/chat-box.png);
+    display: block;
+}
+
+.button_pontuação::before {
+    content: url(/images/dashboard/trophy.png);
+    display: block;
+}
