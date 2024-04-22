@@ -56,46 +56,16 @@ export default function LoginPage() {
         `}
     >
       <p className="font-bold">Acessar Painel</p>
-      <p
-        className={`
-        italic
-        text-center
-        w-80 
-      `}
-      >
+      <p className={`italic text-center w-80 `}> 
         Evocando conexão entre as dimensões ambiental, social e de governo
       </p>
       <form onSubmit={form.handleSubmit(onSubmit)}>
-        <div
-          className={`
-            flex
-            flex-col
-            gap-5
-          `}
-        >
-          <div
-            className={`
-            flex
-            flex-col
-          `}
-          >
-            <label
-              htmlFor=""
-              className={`
-              text-[#2A933E]
-            `}
-            >
+        <div className={`flex flex-col gap-5`}>
+          <div className={`flex flex-col`}>
+            <label htmlFor="" className={`text-[#2A933E]`}>
               Email
             </label>
-            <input
-              className={`
-              border
-              border-solid 
-              border-[#2A933E]
-              h-8
-              
-            `}
-              type="text"
+            <input className={`border border-solid border-[#2A933E] h-8`} type="text"
               {...form.register("email", {
                 required: {
                   value: true,
@@ -107,29 +77,12 @@ export default function LoginPage() {
             {form.formState.errors.email?.message}
           </div>
 
-          <div
-            className={`
-            flex
-            flex-col
-          `}
-          >
-            <label
-              htmlFor=""
-              className={`
-              text-[#2A933E]
-            `}
-            >
+          <div className={`flex flex-col`}>
+            <label htmlFor="" className={`text-[#2A933E]`}>
               Senha
             </label>
-            <input
-              className={`
-              border
-              border-solid 
-              border-[#2A933E]
-              h-8
-              
-            `}
-              type="password"
+
+            <input className={`border border-solid  border-[#2A933E] h-8`} type="password"
               {...form.register("senha", {
                 required: {
                   value: true,
