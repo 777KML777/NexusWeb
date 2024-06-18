@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRightToBracket, faBars, faBell, faCheck, faChevronLeft, faChevronRight, faCircleExclamation, faEnvelope, faFileLines, faGear, faMobile } from '@fortawesome/free-solid-svg-icons';
 import { faMessage } from '@fortawesome/free-solid-svg-icons';
 import { faClipboard } from '@fortawesome/free-solid-svg-icons';
-
+import ItemNotification from './components/ItemNotification.jsx';
 
 // import { api } from "../../../api/api";
 import { useRouter } from "next/navigation";
@@ -79,220 +79,26 @@ export default function LoginPage() {
                 <FontAwesomeIcon icon={faCheck} />
             </div>
 
-            <h2>Tarefas e Ranking</h2>
+            <h2 className='font-bold px-4 mt-8'>Tarefas e Ranking</h2>
 
             {/* PRIMEIRA PARTE PARTE  */}
-            <div
-                className="min-h-96 flex flex-col justify-center"
-            >
-                <div
-                    className={`
-                    border-gray
-                    border-b-2
-                    min-h-24
-                    flex
-                    flex-col
-                    justify-center
-                    items-center
-                    `}>
+            <ItemNotification text="Receba notifcação há criação de uma nova tarefa."  colorIcon="text-green-500" colorSeconIcon="text-black-900"/>
+            <ItemNotification text="Receba notificação ao fim de uma tarefa."  colorIcon="text-green-500" colorSeconIcon="text-black-900" />
+            <ItemNotification text="Receba notificação ao receber pontos de uma tarefa" colorSeconIcon="text-green-500" colorIcon="text-black-900" />
+            <ItemNotification text="Receba notificação ao atualizar a sua posição no ranking"  colorIcon="text-green-500" colorSeconIcon="text-black-900"/>
+            <ItemNotification text="Receba notificação sobre atividade de seus colegas." colorSeconIcon="text-green-500" colorIcon="text-black-900"/>
+            <ItemNotification text="Receba notificação sobre o seu progresso mensal."  colorIcon="text-green-500" colorSeconIcon="text-black-900"/>
 
-                    <Link
-                        className="flex w-full items-center justify-around"
-                        href={"/me"}
-                    >
-
-                        <div className="flex flex-col ">
-                            <p>Receba notificação há criação de uma nova tarefa</p>
-                        </div>
-
-                        <FontAwesomeIcon icon={faEnvelope} />
-                        <FontAwesomeIcon icon={faMobile} />
-                    </Link>
-                </div>
-                <div
-                    className={`
-                    border-gray
-                    border-b-2
-                    min-h-24
-                    flex
-                    flex-col
-                    justify-center
-                    items-center
-                    `}>
-
-                    <Link
-                        className="flex w-full items-center justify-around"
-                        href={"/me"}
-                    >
-
-                        <div className="flex flex-col ">
-                            <p>Receba notificação há criação de uma nova tarefa</p>
-                        </div>
-
-                        <FontAwesomeIcon icon={faEnvelope} />
-                        <FontAwesomeIcon icon={faMobile} />
-                    </Link>
-                </div>
-                <div
-                    className={`
-                    border-gray
-                    border-b-2
-                    min-h-24
-                    flex
-                    flex-col
-                    justify-center
-                    items-center
-                    `}>
-
-                    <Link
-                        className="flex w-full items-center justify-around"
-                        href={"/me"}
-                    >
-
-                        <div className="flex flex-col ">
-                            <p>Receba notificação há criação de uma nova tarefa</p>
-                        </div>
-
-                        <FontAwesomeIcon icon={faEnvelope} />
-                        <FontAwesomeIcon icon={faMobile} />
-                    </Link>
-                </div>
-                <div
-                    className={`
-                    border-gray
-                    border-b-2
-                    min-h-24
-                    flex
-                    flex-col
-                    justify-center
-                    items-center
-                    `}>
-
-                    <Link
-                        className="flex w-full items-center justify-around"
-                        href={"/me"}
-                    >
-
-                        <div className="flex flex-col ">
-                            <p>Receba notificação há criação de uma nova tarefa</p>
-                        </div>
-
-                        <FontAwesomeIcon icon={faEnvelope} />
-                        <FontAwesomeIcon icon={faMobile} />
-                    </Link>
-                </div>
-                <div
-                    className={`
-                    border-gray
-                    border-b-2
-                    min-h-24
-                    flex
-                    flex-col
-                    justify-center
-                    items-center
-                    `}>
-
-                    <Link
-                        className="flex w-full items-center justify-around"
-                        href={"/me"}
-                    >
-
-                        <div className="flex flex-col ">
-                            <p>Receba notificação há criação de uma nova tarefa</p>
-                        </div>
-
-                        <FontAwesomeIcon icon={faEnvelope} />
-                        <FontAwesomeIcon icon={faMobile} />
-                    </Link>
-                </div>
-                <div
-                    className={`
-                    border-gray
-                    border-b-2
-                    min-h-24
-                    flex
-                    flex-col
-                    justify-center
-                    items-center
-                    `}>
-
-                    <Link
-                        className="flex w-full items-center justify-around"
-                        href={"/me"}
-                    >
-
-                        <div className="flex flex-col ">
-                            <p>Receba notificação há criação de uma nova tarefa</p>
-                        </div>
-
-                        <FontAwesomeIcon icon={faEnvelope} />
-                        <FontAwesomeIcon icon={faMobile} />
-                    </Link>
-                </div>
-
-            </div>
-
-            <h2>Segurança</h2>
-
-            {/* SEGUNDA PARTE  */}
-            <div
-                className="min-h-96 flex flex-col justify-center"
-            >
-                <div
-                    className={`
-                    border-gray
-                    border-b-2
-                    min-h-24
-                    flex
-                    flex-col
-                    justify-center
-                    items-center
-                    `}>
-
-                    <Link
-                        className="flex w-full items-center justify-around"
-                        href={"/me"}
-                    >
-
-                        <div className="flex flex-col ">
-                            <p>Receba notificação há criação de uma nova tarefa</p>
-                        </div>
-
-                        <FontAwesomeIcon icon={faEnvelope} />
-                        <FontAwesomeIcon icon={faMobile} />
-                    </Link>
-                </div>
-
-                <div
-                    className={`
-                    border-gray
-                    border-b-2
-                    min-h-24
-                    flex
-                    flex-col
-                    justify-center
-                    items-center
-                    `}>
-
-                    <Link
-                        className="flex w-full items-center justify-around"
-                        href={"/me"}
-                    >
-
-                        <div className="flex flex-col ">
-                            <p>Receba notificação há criação de uma nova tarefa</p>
-                        </div>
-
-                        <FontAwesomeIcon icon={faEnvelope} />
-                        <FontAwesomeIcon icon={faMobile} />
-                    </Link>
-                </div>
-            </div>
+            {/* SEGUNDA PARTE */}             
+            <h2 className='font-bold px-4 mt-8'>Segurança</h2>
+            <ItemNotification text="Receba notificação ao realizar um novo login." colorIcon="text-green-500" colorSeconIcon="text-black-900"/>
+            <ItemNotification text="Receba notificação sobre atualizações no seu perfil."  colorIcon="text-green-500" colorSeconIcon="text-black-900" />
 
             {/* TERCEIRA PARTE */}
             <Button
                 className={
                     `
+                    self-center
                     min-w-80
                     bg-[#006DB0]
                     mt-4
