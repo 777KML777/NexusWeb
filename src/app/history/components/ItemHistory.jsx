@@ -1,26 +1,35 @@
-import { faEnvelope, faMobile } from "@fortawesome/free-solid-svg-icons";
+import {
+    faChevronUp
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 
-export default function ItemHistory({ text, colorIcon, colorSeconIcon}) {
+export default function ItemHistory({ text, date, colorIcon, point }) {
   return (
     <>
       <div
         className={`
-                    border-gray
-                    px-4
-                    border-b-2
-                    mt-2
-                `}
+                border-gray 
+                border-b-2
+                px-4
+                mt-2
+            `}
       >
-        <Link href={"/notifications"} className="flex items-center justify-between">
+        <Link
+          href={"/notifications"}
+          className="flex items-center justify-between"
+        >
           <div>
             <p>{text}</p>
+            <p className="text-gray-500">{date}</p>
           </div>
 
           <div className="flex">
-            <FontAwesomeIcon className={`px-2 text-2xl ${colorIcon}`} icon={faEnvelope} />
-            <FontAwesomeIcon className={`px-2 text-2xl ${colorSeconIcon}`} icon={faMobile} />
+            <p className={`${colorIcon}`}>{point}</p>
+            <FontAwesomeIcon
+              className={`px-2 text-2xl ${colorIcon}`}
+              icon={faChevronUp}
+            />
           </div>
         </Link>
       </div>

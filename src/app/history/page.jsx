@@ -87,52 +87,61 @@ export default function LoginPage() {
 
       <h2 className="font-bold px-4 mt-8">Pontos na Temporada de Outono</h2>
 
-      {/* PRIMEIRA PARTE PARTE  */}
-      <ItemHistory
-        text="Receba notifcação há criação de uma nova tarefa."
-        colorIcon="text-green-500"
-        colorSeconIcon="text-black-900"
-      />
-      <ItemHistory
-        text="Receba notifcação há criação de uma nova tarefa."
-        colorIcon="text-green-500"
-        colorSeconIcon="text-black-900"
-      />
-      <ItemHistory
-        text="Receba notifcação há criação de uma nova tarefa."
-        colorIcon="text-green-500"
-        colorSeconIcon="text-black-900"
-      />
+      {/*INÍCIO --- PRIMEIRA PARTE PARTE  */}
+        <ItemHistory
+          text="Temporada de Verão"
+          date="21/12/2023 - 20/03/2024"
+          colorIcon="text-green-500"
+          point="8"
+        />
+        <ItemHistory
+          text="Temporada de Verão"
+          date="21/12/2023 - 20/03/2024"
+          colorIcon="text-green-500"
+          point="8"
+        />
+        <ItemHistory
+          text="Temporada de Verão"
+          date="21/12/2023 - 20/03/2024"
+          colorIcon="text-green-500"
+          point="8"
+        />
+        {/* FIM --- PRIMEIRA PARTE */}
 
-      {/* SEGUNDA PARTE */}
+      {/* INÍCIO --- SEGUNDA PARTE */}
       <h2 className="font-bold px-4 mt-8">Rankings Passados</h2>
       <ItemHistory
-        text="Receba notificação ao realizar um novo login."
+        text="Temporada de Verão"
+        date="21/12/2023 - 20/03/2024"
         colorIcon="text-green-500"
-        colorSeconIcon="text-black-900"
+        point="8"
       />
       <ItemHistory
-        text="Receba notificação ao realizar um novo login."
+        text="Temporada de Verão"
+        date="21/12/2023 - 20/03/2024"
         colorIcon="text-green-500"
-        colorSeconIcon="text-black-900"
+        point="8"
       />
       <ItemHistory
-        text="Receba notificação sobre atualizações no seu perfil."
+        text="Temporada de Verão"
+        date="21/12/2023 - 20/03/2024"
         colorIcon="text-green-500"
-        colorSeconIcon="text-black-900"
+        point="8"
       />
 
       {/* TERCEIRA PARTE */}
       <h2 className="font-bold px-4 mt-8">Recompensas</h2>
       <ItemHistory
-        text="Receba notificação ao realizar um novo login."
+        text="Temporada de Verão"
+        date="21/12/2023 - 20/03/2024"
         colorIcon="text-green-500"
-        colorSeconIcon="text-black-900"
+        point="8"
       />
       <ItemHistory
-        text="Receba notificação ao realizar um novo login."
+        text="Temporada de Verão"
+        date="21/12/2023 - 20/03/2024"
         colorIcon="text-green-500"
-        colorSeconIcon="text-black-900"
+        point="8"
       />
     </div>
   );
