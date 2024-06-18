@@ -7,7 +7,7 @@ import {
 } from "@/components/ui/avatar";
 // ExampleComponent.js
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRightToBracket, faBars, faBell, faChevronRight, faCircleExclamation, faFileLines, faGear } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRightToBracket, faBars, faBell, faCheck, faChevronLeft, faChevronRight, faCircleExclamation, faEnvelope, faFileLines, faGear, faMobile } from '@fortawesome/free-solid-svg-icons';
 import { faMessage } from '@fortawesome/free-solid-svg-icons';
 import { faClipboard } from '@fortawesome/free-solid-svg-icons';
 
@@ -21,6 +21,7 @@ import { useState } from "react";
 
 import { useForm } from "react-hook-form";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 export default function LoginPage() {
     // Hook do próprio next para redirecionar para outra página após uma ação.
@@ -67,44 +68,101 @@ export default function LoginPage() {
                     href={"/profile"}
                 >
 
-                    <FontAwesomeIcon icon={faBars} />
+                    <FontAwesomeIcon icon={faChevronLeft} />
                 </Link>
                 <p className={`
                     font-bold
                 `}
                 >
-                    Informações Pessoais
+                    Histórico
                 </p>
-                <FontAwesomeIcon icon={faBell} />
+                <FontAwesomeIcon icon={faCheck} />
             </div>
 
-            {/* PRIMEIRA PARTE   */}
-            <div
-                className={`
-                    items-center
-                    flex
-                    pl-4
-                `}
-            >
-                <Avatar className={
-                    `
-                    mt-4
-                    size-1/4
-                `
-                }
-                >
-                    <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
-                    <AvatarFallback>CN</AvatarFallback>
-                </Avatar>
+            <h2>Tarefas e Ranking</h2>
 
+            {/* PRIMEIRA PARTE PARTE  */}
+            <div
+                className="min-h-96 flex flex-col justify-center"
+            >
                 <div
                     className={`
-                pl-4
-            `}>
-                    <p>Felipe Oliveira</p>
-                    <p>Company Condelivery</p>
+                    border-gray
+                    border-b-2
+                    min-h-24
+                    flex
+                    flex-col
+                    justify-center
+                    items-center
+                    `}>
+
+                    <Link
+                        className="flex w-full items-center justify-around"
+                        href={"/me"}
+                    >
+
+                        <div className="flex flex-col ">
+                            <p>Cada um no seu quadrado</p>
+                            <p>01/05/2024 10:30:11</p>
+                        </div>
+
+                        <FontAwesomeIcon icon={faEnvelope} />
+                        <FontAwesomeIcon icon={faMobile} />
+                    </Link>
                 </div>
+             
+                <div
+                    className={`
+                    border-gray
+                    border-b-2
+                    min-h-24
+                    flex
+                    flex-col
+                    justify-center
+                    items-center
+                    `}>
+
+                    <Link
+                        className="flex w-full items-center justify-around"
+                        href={"/me"}
+                    >
+
+                        <div className="flex flex-col ">
+                            <p>Receba notificação há criação de uma nova tarefa</p>
+                        </div>
+
+                        <FontAwesomeIcon icon={faEnvelope} />
+                        <FontAwesomeIcon icon={faMobile} />
+                    </Link>
+                </div>
+                <div
+                    className={`
+                    border-gray
+                    border-b-2
+                    min-h-24
+                    flex
+                    flex-col
+                    justify-center
+                    items-center
+                    `}>
+
+                    <Link
+                        className="flex w-full items-center justify-around"
+                        href={"/me"}
+                    >
+
+                        <div className="flex flex-col ">
+                            <p>Receba notificação há criação de uma nova tarefa</p>
+                        </div>
+
+                        <FontAwesomeIcon icon={faEnvelope} />
+                        <FontAwesomeIcon icon={faMobile} />
+                    </Link>
+                </div>
+
             </div>
+
+            <h2>Segurança</h2>
 
             {/* SEGUNDA PARTE  */}
             <div
@@ -126,13 +184,12 @@ export default function LoginPage() {
                         href={"/me"}
                     >
 
-                        <FontAwesomeIcon icon={faClipboard} />
                         <div className="flex flex-col ">
-                            <p>Informações Pessoais</p>
-                            <p>Minhas informações pessoais</p>
+                            <p>Receba notificação há criação de uma nova tarefa</p>
                         </div>
 
-                        <FontAwesomeIcon icon={faChevronRight} />
+                        <FontAwesomeIcon icon={faEnvelope} />
+                        <FontAwesomeIcon icon={faMobile} />
                     </Link>
                 </div>
 
@@ -149,107 +206,18 @@ export default function LoginPage() {
 
                     <Link
                         className="flex w-full items-center justify-around"
-                        href={"/notifications"}
+                        href={"/me"}
                     >
 
-                        <FontAwesomeIcon icon={faMessage} />
                         <div className="flex flex-col ">
-                            <p>Notificações</p>
-                            <p>Minha central de notificações</p>
+                            <p>Receba notificação há criação de uma nova tarefa</p>
                         </div>
 
-                        <FontAwesomeIcon icon={faChevronRight} />
+                        <FontAwesomeIcon icon={faEnvelope} />
+                        <FontAwesomeIcon icon={faMobile} />
                     </Link>
                 </div>
-
-                <div
-                    className={`
-                    border-gray
-                    border-b-2
-                    min-h-24
-                    flex
-                    flex-col
-                    justify-center
-                    items-center
-                    `}>
-
-                    <Link
-                        className="flex w-full items-center justify-around"
-                        href={"/history"}
-
-                    >
-
-                        <FontAwesomeIcon icon={faFileLines} />
-                        <div className="flex flex-col ">
-                            <p>Histórico</p>
-                            <p>Meu histórico de pontuações</p>
-                        </div>
-
-                        <FontAwesomeIcon icon={faChevronRight} />
-                    </Link>
-                </div>
-
             </div>
-
-            {/* TERCEIRA PARTE  */}
-            <div
-
-            >
-
-                <div
-                    className={`
-                    min-h-12
-                    flex
-                    flex-col
-                    justify-center
-                    items-center
-                    `}>
-
-                    <div
-                        className="flex w-full items-center justify-around min-h-12"
-                    >
-
-                        <FontAwesomeIcon icon={faCircleExclamation} />
-                        <p>Ajuda</p>
-                        <FontAwesomeIcon icon={faChevronRight} />
-                    </div>
-                </div>
-                <div
-                    className={`
-                    min-h-12
-                    flex
-                    flex-col
-                    justify-center
-                    items-center
-                    `}>
-                    <div
-                        className="flex w-full items-center justify-around min-h-12"
-                    >
-
-                        <FontAwesomeIcon icon={faGear} />
-                        <p>Configurações</p>
-                        <FontAwesomeIcon icon={faChevronRight} />
-                    </div>
-                </div>
-                <div
-                    className={`
-                    min-h-12
-                    flex
-                    flex-col
-                    justify-center
-                    items-center
-                    `}>
-                    <div
-                        className="flex w-full items-center justify-around min-h-12"
-                    >
-
-                        <FontAwesomeIcon icon={faArrowRightToBracket} />
-                        <p>Desconectar</p>
-                        <FontAwesomeIcon icon={faChevronRight} />
-                    </div>
-                </div>
-            </div>
-
         </div>
     );
 }
