@@ -1,16 +1,19 @@
 import {
-    faChevronUp
+  faChevronDown,
+    faChevronUp,
+    faHandMiddleFinger,
+    faTicket
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 
-export default function ItemHistory({ text, date, colorIcon, point }) {
+export default function ItemHistory({ text, date, colorIcon, point, border }) {
   return (
     <>
       <div
         className={`
                 border-gray 
-                border-b-2
+                ${border}
                 px-4
                 mt-2
             `}
@@ -28,7 +31,8 @@ export default function ItemHistory({ text, date, colorIcon, point }) {
             <p className={`${colorIcon}`}>{point}</p>
             <FontAwesomeIcon
               className={`px-2 text-2xl ${colorIcon}`}
-              icon={faChevronUp}
+              icon={colorIcon == 'text-green-500' ?faChevronUp 
+                : (colorIcon == 'text-red-500') ? faChevronDown : faTicket}
             />
           </div>
         </Link>
