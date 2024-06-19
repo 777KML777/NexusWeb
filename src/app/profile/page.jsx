@@ -83,7 +83,8 @@ export default function LoginPage() {
       {/* PRIMEIRA PARTE   */}
       <div
         className={`
-                    items-center
+                    items-center xl:items-end
+                    xl:justify-center
                     flex
                     pl-4
                 `}
@@ -91,7 +92,8 @@ export default function LoginPage() {
         <Avatar
           className={`
                     mt-4
-                    size-1/4
+                    size-1/4 xl:size-1/6
+                     
                 `}
         >
           <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
@@ -104,7 +106,7 @@ export default function LoginPage() {
             `}
         >
           <p>Felipe Oliveira</p>
-          <p>Company Condelivery</p>
+          <p className="text-sm text-gray-400">Company Condelivery</p>
         </div>
       </div>
 
@@ -115,6 +117,7 @@ export default function LoginPage() {
                     border-gray
                     border-b-2
                     min-h-24
+                    mx-4
                     flex
                     flex-col
                     justify-center
@@ -126,9 +129,9 @@ export default function LoginPage() {
             href={"/me"}
           >
             <FontAwesomeIcon icon={faClipboard} />
-            <div className="flex flex-col ">
+            <div className="flex flex-col w-3/6 xl:w-2/12">
               <p>Informações Pessoais</p>
-              <p>Minhas informações pessoais</p>
+              <p className="text-sm text-gray-400">Minhas informações pessoais</p>
             </div>
 
             <FontAwesomeIcon icon={faChevronRight} />
@@ -140,6 +143,7 @@ export default function LoginPage() {
                     border-gray
                     border-b-2
                     min-h-24
+                    mx-4
                     flex
                     flex-col
                     justify-center
@@ -151,9 +155,9 @@ export default function LoginPage() {
             href={"/notifications"}
           >
             <FontAwesomeIcon icon={faMessage} />
-            <div className="flex flex-col ">
+            <div className="flex flex-col w-3/6 xl:w-2/12">
               <p>Notificações</p>
-              <p>Minha central de notificações</p>
+              <p className="text-sm text-gray-400">Minha central de notificações</p>
             </div>
 
             <FontAwesomeIcon icon={faChevronRight} />
@@ -163,9 +167,9 @@ export default function LoginPage() {
         <div
           className={`
                     border-gray
-                    border-b-2
                     min-h-24
                     flex
+                    mx-4
                     flex-col
                     justify-center
                     items-center
@@ -176,9 +180,9 @@ export default function LoginPage() {
             href={"/history"}
           >
             <FontAwesomeIcon icon={faFileLines} />
-            <div className="flex flex-col ">
+            <div className="flex flex-col w-3/6 xl:w-2/12">
               <p>Histórico</p>
-              <p>Meu histórico de pontuações</p>
+              <p className="text-sm text-gray-400">Meu histórico de pontuações</p>
             </div>
 
             <FontAwesomeIcon icon={faChevronRight} />
@@ -196,7 +200,7 @@ export default function LoginPage() {
         >
           <div className="flex w-full items-center justify-around min-h-12">
             <FontAwesomeIcon icon={faCircleExclamation} />
-            <p className="w-3/6 text-center">Ajuda</p>
+            <p className="w-3/6 xl:w-2/12 text-center">Ajuda</p>
             <FontAwesomeIcon icon={faChevronRight} />
           </div>
         </div>
@@ -211,7 +215,7 @@ export default function LoginPage() {
         >
           <div className="flex w-full items-center justify-around min-h-12">
             <FontAwesomeIcon icon={faGear} />
-            <p className="w-3/6 text-center">Configurações</p>
+            <p className="w-3/6 xl:w-2/12 text-center">Configurações</p>
             <FontAwesomeIcon icon={faChevronRight} />
           </div>
         </div>
@@ -225,9 +229,9 @@ export default function LoginPage() {
                     `}
         >
           <div className="flex w-full items-center justify-around min-h-12">
-            <FontAwesomeIcon icon={faArrowRightToBracket} />
-            <p className="w-3/6 text-center">Desconectar</p>
-            <FontAwesomeIcon icon={faChevronRight} />
+            <FontAwesomeIcon className="text-red-500" icon={faArrowRightToBracket} />
+            <p className="w-3/6 xl:w-2/12 text-center text-red-500">Desconectar</p>
+            <FontAwesomeIcon className="text-white" icon={faChevronRight} />
           </div>
         </div>
       </div>

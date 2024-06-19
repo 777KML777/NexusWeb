@@ -14,7 +14,7 @@ export default function ItemHistory({ text, date, colorIcon, point, border }) {
         className={`
                 border-gray 
                 ${border}
-                px-4
+                mx-4
                 mt-2
             `}
       >
@@ -24,7 +24,7 @@ export default function ItemHistory({ text, date, colorIcon, point, border }) {
         >
           <div>
             <p>{text}</p>
-            <p className="text-gray-500">{date}</p>
+            <p className="text-sm text-gray-400">{date}</p>
           </div>
 
           <div className="flex">

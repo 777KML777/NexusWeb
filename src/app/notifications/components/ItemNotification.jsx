@@ -2,14 +2,14 @@ import { faEnvelope, faMobile } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 
-export default function ItemNofification({ text, colorIcon, colorSeconIcon}) {
+export default function ItemNofification({ text, colorIcon, colorSeconIcon, border}) {
   return (
     <>
       <div
         className={`
                     border-gray
-                    px-4
-                    border-b-2
+                    mx-4
+                    ${border}
                     mt-2
                 `}
       >
