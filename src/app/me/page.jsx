@@ -81,7 +81,7 @@ export default function LoginPage() {
             <Avatar className={
                 `
                     mt-4
-                    size-1/4
+                    size-1/4 xl:size-1/6
                 `
             }
             >
@@ -98,7 +98,7 @@ export default function LoginPage() {
             >
                 <Label htmlFor="nome">Nome</Label>
                 <Input
-                    placeholder="nome"
+                    value="Felipe"
                     id="nome"
                     className={
                         `
@@ -116,7 +116,7 @@ export default function LoginPage() {
                 }>
                 <Label htmlFor="sobrenome">Sobrenome</Label>
                 <Input
-                    placeholder="sobrenome"
+                    value="Oliveira"
                     id="sobrenome"
                     className={
                         `
@@ -133,7 +133,7 @@ export default function LoginPage() {
                 }>
                 <Label htmlFor="email">E-mail</Label>
                 <Input
-                    placeholder="email"
+                    value="felipeoliveira@gmail.com"
                     id="email"
                     className={
                         `
@@ -151,7 +151,7 @@ export default function LoginPage() {
                 <Label htmlFor="empresa">Empresa</Label>
                 <Input
                     disabled
-                    placeholder="empresa"
+                    value="Company Condelivery"
                     id="empresa"
                     className={
                         `
@@ -169,7 +169,7 @@ export default function LoginPage() {
                 <Label htmlFor="departamento">Departamento</Label>
                 <Input
                     disabled
-                    placeholder="departamento"
+                    value="Desenvolvimento Digital"
                     id="departamento"
                     className={
                         `

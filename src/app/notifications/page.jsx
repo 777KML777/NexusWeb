@@ -82,16 +82,16 @@ export default function LoginPage() {
             <h2 className='font-bold px-4 mt-8'>Tarefas e Ranking</h2>
 
             {/* PRIMEIRA PARTE PARTE  */}
-            <ItemNotification text="Receba notifcação há criação de uma nova tarefa."  colorIcon="text-green-500" colorSeconIcon="text-black-900"/>
-            <ItemNotification text="Receba notificação ao fim de uma tarefa."  colorIcon="text-green-500" colorSeconIcon="text-black-900" />
-            <ItemNotification text="Receba notificação ao receber pontos de uma tarefa" colorSeconIcon="text-green-500" colorIcon="text-black-900" />
-            <ItemNotification text="Receba notificação ao atualizar a sua posição no ranking"  colorIcon="text-green-500" colorSeconIcon="text-black-900"/>
-            <ItemNotification text="Receba notificação sobre atividade de seus colegas." colorSeconIcon="text-green-500" colorIcon="text-black-900"/>
+            <ItemNotification text="Receba notifcação há criação de uma nova tarefa."  colorIcon="text-green-500" colorSeconIcon="text-black-900" border="border-b-2" />
+            <ItemNotification text="Receba notificação ao fim de uma tarefa."  colorIcon="text-green-500" colorSeconIcon="text-black-900"  border="border-b-2" />
+            <ItemNotification text="Receba notificação ao receber pontos de uma tarefa" colorSeconIcon="text-green-500" colorIcon="text-black-900"  border="border-b-2" />
+            <ItemNotification text="Receba notificação ao atualizar a sua posição no ranking"  colorIcon="text-green-500" colorSeconIcon="text-black-900" border="border-b-2" />
+            <ItemNotification text="Receba notificação sobre atividade de seus colegas." colorSeconIcon="text-green-500" colorIcon="text-black-900" border="border-b-2" />
             <ItemNotification text="Receba notificação sobre o seu progresso mensal."  colorIcon="text-green-500" colorSeconIcon="text-black-900"/>
 
             {/* SEGUNDA PARTE */}             
             <h2 className='font-bold px-4 mt-8'>Segurança</h2>
-            <ItemNotification text="Receba notificação ao realizar um novo login." colorIcon="text-green-500" colorSeconIcon="text-black-900"/>
+            <ItemNotification text="Receba notificação ao realizar um novo login." colorIcon="text-green-500" colorSeconIcon="text-black-900" border="border-b-2"/>
             <ItemNotification text="Receba notificação sobre atualizações no seu perfil."  colorIcon="text-green-500" colorSeconIcon="text-black-900" />
 
             {/* TERCEIRA PARTE */}
